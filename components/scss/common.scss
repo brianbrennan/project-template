@@ -1,0 +1,155 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+}
+
+*{
+	color:$black;
+	font-family:$mainFont;
+
+	&::selection{
+		background-color: $blue;
+		color:$white;
+	}
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: $headlineFont;
+	line-height:1.5;
+	padding:$tny;
+}
+
+h1{
+	font-size:$lgFont;
+}
+
+h2{
+	font-size:$medFont;
+}
+
+h3{
+	font-size:$regFont;
+}
+
+h4{
+	font-size:$smFont;
+}
+
+h5{
+	font-size:$liFont;
+}
+
+h6{
+	font-size:$minFont;
+}
+
+p{
+	line-height:1.5;
+	font-family: $mainFont;
+	padding:$tny;
+	color:$grey;
+}
+
+ul{
+	font-family: $mainFont;
+	color:$grey;
+	padding:$tny;
+
+	li{
+		list-style:disc;
+
+		li{list-style-type:circle}
+	}
+}
+
+ol{
+	font-family: $mainFont;
+	color:$grey;
+	padding:$tny;
+
+	li{
+		list-style:decimal;
+
+		li{list-style:upper-roman}
+	}
+}
+
+li{
+	color:$grey;
+	padding:$tny;
+	line-height:1.5;
+}
+
+b{
+	font-weight:bold;
+}
+
+i{
+	font-style:italic;
+}
+
+a{
+	color:$blue;
+}
+
+table{
+	display:table;
+	font-family:$mainFont;
+	width:100%;
+	border-radius:$mic;
+
+
+
+	tr:nth-child(odd){
+		background:$light-grey;
+	}
+
+	th{
+		padding:$tny;
+		background-color:$blue;
+		color:$white;
+	}
+
+	td{
+		display:table-cell;
+		color:$grey;
+		padding:$tny;
+	}
+}
+
+input:focus,textarea:focus{outline:none;}
+
+input[type="text"],textarea{
+	font-family:$mainFont;
+	margin:$tny;
+	padding:$tny;
+	border:1px solid $mid-grey;
+	border-radius:$mic;
+
+	@include trans(color);
+	@include trans(border-color);
+
+	@include placeholder{
+		@include trans(color);
+	}
+
+	&:focus{
+		border-color:$blue;
+		color:$blue;
+
+		@include placeholder{
+			color:$blue;
+		}
+	}
+}
+
+textarea{
+	resize:none;
+}
+
+section{
+	padding:$reg 0;
+}
+
+

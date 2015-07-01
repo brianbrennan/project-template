@@ -1,0 +1,37 @@
+{
+  "name": "project-template",
+  "version": "1.0.0",
+  "description": "Simple set-up for my porject workflow",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-livereload": "^3.8.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sass": "^2.0.3",
+    "gulp-uglify": "^1.2.0",
+    "gulp-util": "^3.0.6",
+    "gulp-watch": "^4.2.4"
+  },
+  "scripts": {
+    "preinstall": "cd components/scss && gem install sass bourbon neat && bourbon install && neat install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bbrennan6/project-template.git"
+  },
+  "keywords": [
+    "project",
+    "workflow",
+    "template"
+  ],
+  "author": "Brian Brennan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bbrennan6/project-template/issues"
+  },
+  "homepage": "https://github.com/bbrennan6/project-template"
+}

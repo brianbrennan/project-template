@@ -1,0 +1,4 @@
+
+@mixin trans($elem: all){
+	@include transition($elem 0.2s ease-in-out);
+}
