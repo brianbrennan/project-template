@@ -126,6 +126,7 @@ input[type="text"],textarea{
 	padding:$tny;
 	border:1px solid $mid-grey;
 	border-radius:$mic;
+	box-shadow:inset 0 0 2px 2px $light-grey;
 
 	@include trans(color);
 	@include trans(border-color);
